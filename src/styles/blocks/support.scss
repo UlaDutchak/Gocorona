@@ -13,7 +13,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6vh;
+    margin-bottom: 6vw;
+
+    @include onTablet {
+      height: 22vh;
+    }
+
+    @include onMobile {
+      width: 85vw;
+      height: 20vh;
+    }
   }
 
   &__square {
@@ -157,20 +166,17 @@
 
   &__img {
     margin-left: 9vw;
-    min-width: 45vw;
-    min-height: 30vh;
+    width: 45vw;
+    height: 25vw;
+    transition: 0.3s;
 
-    @include onSmallDesktop {
-      margin-left: 2vw;
-      max-width: 35vw;
-      max-height: 50vh;
-      // max-width: 25vw;
-      // max-height: 35vh;
+    &:hover {
+      transform: scale(1.1);
     }
 
     @include onMobile {
-      min-width: 70vw;
-      min-height: 35vw;
+      width: 70vw;
+      height: 40vw;
     }
   }
 }

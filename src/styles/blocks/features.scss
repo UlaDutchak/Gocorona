@@ -1,5 +1,6 @@
 .features {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   height: 100vh;
   width: 100vw;
 
@@ -7,24 +8,12 @@
     &-first {
       width: 12vw;
       height: 12vw;
-      top: 6%;
-      left: 25%;
-      
-      @include onBigDesktop {
-        top: 5%;
-        left: 20%;
-      }
-
-      @include onTablet {
-        left: 10%;
-        top: 12%;
-      }
+      top: 0%;
+      left: 12%;
 
       @include onMobile {
         width: 12vh;
         height: 12vh;
-        top: 20%;
-        left: 3%;
       }
     }
 
@@ -41,56 +30,26 @@
 
     &-second {
       top: 76%;
-      left: 28%;
-
-      @include onBigDesktop {
-        top: 78%;
-        left: 25%;
-      }
-
-      @include onSmallDesktop {
-        top: 80%;
-        left: 20%;
-      }
-
-      @include onTablet {
-        left: 14%;
-      }
-
-      @include onMobile {
-        top: 69%;
-        left: 3%;
-      }
+      left: 18%;
     }
 
     &-third {
       top: 60%;
-      left: 60%;
-
-      @include onBigDesktop {
-        left: 63%;
-      }
-
-      @include onSmallDesktop {
-        left: 66%;
-      }
-
-      @include onTablet {
-        left: 74%;
-      }
+      left: 65%;
     }
   }
 
   &__container {
     display: flex;
-    width: 50vw;
-    height: 100vh;
+    width: 35vw;
+    height: 45vw;
+    margin: auto;
     position: relative;
 
     &-img {
       margin: auto;
-      min-width: 19vw;
-      min-height: 34vw;
+      width: 20vw;
+      height: 35vw;
       z-index: 1;
       transition: 0.3s;
 
@@ -109,8 +68,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
     height: 100vh;
+    width: 50vw;
 
     @include onMobile {
       margin-left: 10px;
@@ -119,10 +78,6 @@
     &-title {
       margin: 0;
       width: 32vw;
-
-      @include onSmallDesktop {
-        width: 40vw;
-      }
     }
     
     &-text {
