@@ -112,6 +112,10 @@
     width: 50vw;
     height: 100vh;
 
+    @include onMobile {
+      margin-left: 10px;
+    }
+
     &-title {
       margin: 0;
       width: 32vw;
@@ -126,7 +130,6 @@
       margin: 12px 0 24px;
 
       @include onSmallDesktop {
-        margin: 12px 10px 24px;
         width: 45vw;
       }
     }
