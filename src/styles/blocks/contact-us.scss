@@ -1,0 +1,190 @@
+.contact-us {
+  
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+      margin: 0;
+      padding-top: 7vw;
+      text-align: center;
+
+      @include onMobile {
+        width: 90vw;
+      }
+    }
+
+    &-text {
+      text-align: center;
+      width: 53vw;
+    }
+  }
+
+  &__square {
+    &-first,
+    &-fourth {
+      width: 6vw;
+      height: 6vw;
+
+      @include onMobile {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
+
+    &-first {
+      top: 80%;
+      left: 0%;
+      transform: rotate(-30deg);
+
+      @include onMobile {
+        top: 77%;
+        left: 4%;
+      }
+    }
+
+    &-second {
+      width: 8vw;
+      height: 8vw;
+      top: 20%;
+      left: 76%;
+      transform: rotate(105deg);
+
+      @include onMobile {
+        width: 12vw;
+        height: 12vw;
+        top: 22%;
+        left: 81%;
+      }
+    }
+
+    &-third {
+      width: 11vw;
+      height: 11vw;
+      top: 60%;
+      left: 75%;
+      transform: rotate(-30deg);
+
+      @include onMobile {
+        width: 18vw;
+        height: 18vw;
+        top: 69%;
+        left: 0%;
+      }
+    }
+
+    &-fourth {
+      top: 0;
+      right: 0;
+      transform: rotate(-30deg);
+
+      @include onMobile {
+        top: 5%;
+        right: 5%;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0;
+
+    @include onMobile {
+      flex-direction: column;
+    }
+  }
+
+  &__container {
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onMobile {
+      width: 60vw;
+      height: 60vw;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 25vw;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 1;
+
+    @include onMobile {
+      width: 45vw;
+      height: 45vw;
+    }
+
+    &-img {
+      width: 6vw;
+      height: 6vw;
+      margin-bottom: 5vw;
+
+      @include onTablet {
+        margin-bottom: 2vw;
+      }
+
+      @include onMobile {
+        width: 10vw;
+        height: 10vw;
+        margin-bottom: 5vw;
+      }
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 138.5%;
+      text-align: center;
+      letter-spacing: 0.08em;
+      margin: 0;
+
+      @include onSmallDesktop {
+        font-size: 14px;
+      }
+
+      @include onTablet {
+        font-size: 12px;
+        letter-spacing: 0;
+      }
+
+      @include onMobile {
+        font-size: 14px;
+      }
+    }
+
+    &-text {
+      font-size: 12px;
+      line-height: 138.5%;
+      text-align: center;
+      letter-spacing: 0.08em;
+      color: #616161;
+      margin: 4px 0;
+      width: 20vw;
+
+      @include onTablet {
+        font-size: 10px;
+        letter-spacing: 0;
+      }
+
+      @include onMobile {
+        width: 40vw;
+      }
+    }
+  }
+}
