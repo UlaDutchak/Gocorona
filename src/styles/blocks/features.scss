@@ -126,7 +126,8 @@
       margin: 12px 0 24px;
 
       @include onSmallDesktop {
-        width: 40vw;
+        margin: 12px 10px 24px;
+        width: 45vw;
       }
     }
   }
