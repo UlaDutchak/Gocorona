@@ -1,0 +1,10 @@
+.text {
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  color: #616161;
+
+  @include onTablet {
+    font-size: 10px;
+  }
+}

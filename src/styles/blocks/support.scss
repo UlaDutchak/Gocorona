@@ -1,0 +1,164 @@
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFBFD;;
+
+  &__wrapper {
+    width: 62vw;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6vh;
+  }
+
+  &__square {
+    &-first {
+      width: 5vw;
+      height: 5vw;
+      bottom: 0%;
+      left: 0%;
+      transform: rotate(-30deg);
+
+      @include onTablet {
+        width: 5vh;
+        height: 5vh;
+      }
+    }
+
+    &-second {
+      width: 7vw;
+      height: 7vw;
+      transform: rotate(105deg);
+      top: -10%;
+
+      @include onTablet {
+        width: 7vh;
+        height: 7vh;
+      }
+    }
+
+    &-third {
+      width: 9vw;
+      height: 9vw;
+      transform: rotate(-30deg);
+      top: 10%;
+      left: 88%;
+
+      @include onTablet {
+        width: 9vh;
+        height: 9vh;
+      }
+    }
+  }
+
+  &__details {
+    width: 57vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+    z-index: 1;
+
+    @include onMobile {
+      width: 80vw;
+    }
+
+    &-card {
+      &-title {
+        font-size: 36px;
+        line-height: 43px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.14em;
+        color: #EC5863;
+        margin: 0;
+
+        @include onTablet {
+          font-size: 30px;
+          letter-spacing: 0.05em;
+        }
+
+        @include onMobile {
+          font-size: 22px;
+          padding: 0 10px;
+        }
+      }
+
+      &-text {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.37em;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 5px 0 0;
+
+        @include onTablet {
+          font-size: 8px;
+          letter-spacing: 0.2em;
+        }
+
+        @include onMobile {
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__info {
+    margin-left: 7vw;
+
+    @include onMobile {
+      margin-left: 3vw;
+    }
+
+    &-title {
+      margin: 0 0 12px;
+    }
+
+    &-text {
+      width: 30vw;
+
+      @include onMobile {
+        width: 50vw;
+      }
+    }
+  }
+
+  &__link {
+    color: #4285f4;
+    text-decoration: none;
+  }
+
+  &__img {
+    margin-left: 9vw;
+    min-width: 45vw;
+    min-height: 25vh;
+
+    @include onSmallDesktop {
+      margin-left: 2vw;
+      max-width: 25vw;
+      max-height: 30vh;
+    }
+
+    @include onMobile {
+      margin-left: 0;
+    }
+  }
+}

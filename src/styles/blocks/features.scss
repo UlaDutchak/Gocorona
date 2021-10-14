@@ -1,5 +1,7 @@
 .features {
   display: flex;
+  height: 100vh;
+  width: 100vw;
 
   &__square {
     &-first {
@@ -76,10 +78,6 @@
       @include onTablet {
         left: 74%;
       }
-
-      @include onMobile {
-        left: 78%;
-      }
     }
   }
 
@@ -93,6 +91,12 @@
       margin: auto;
       min-width: 19vw;
       min-height: 34vw;
+      z-index: 1;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -118,10 +122,6 @@
     }
     
     &-text {
-      font-size: 12px;
-      line-height: 138.5%;
-      letter-spacing: 0.08em;
-      color: #616161;
       width: 32vw;
       margin: 12px 0 24px;
 

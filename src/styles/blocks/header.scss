@@ -99,17 +99,7 @@
     }
 
     &-description {
-      font-size: 12px;
-      line-height: 138.5%;
-      letter-spacing: 0.08em;
-      color: #616161;
-      margin: 12px 0 24px;
       width: 375px;
-
-      @include onTablet {
-        margin: 8px 0 16px;
-        font-size: 10px;
-      }
 
       @include onMobile {
         width: 200px;
