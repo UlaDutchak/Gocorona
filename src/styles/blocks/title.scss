@@ -15,4 +15,14 @@
   @include onMobile {
     font-size: 28px;
   }
+
+  &--link-pink {
+    color: #EC5863;
+    text-decoration: none;
+  }
+
+  &--link-blue {
+    color: #4285f4;
+    text-decoration: none;
+  }
 }
