@@ -3,11 +3,99 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Gocorona</title>
+    <link rel="icon" href="./images/icon.svg">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page">
+    <header class="page__header header">
+      <div class="header__wrapper">
+        <div class="header__top-action">
+          <a href="#" class="header__logo">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              class="header__logo-img"
+            >
+          </a>
+  
+          <a href="#menu" class="header__icon">
+            <img
+              class="header__icon--menu"
+              src="./images/menu1.png"
+              alt="menu"
+            >
+          </a>
+          <nav class="header__nav page__menu menu" id="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--first">
+                <a href="#" class="menu__link menu__link">
+                  X
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Home
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#features" class="menu__link">
+                  Features
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#support" class="menu__link">
+                  Support
+                </a>
+              </li>
+              <li class="menu__item menu__item--last">
+                <a href="#contact-us" class="menu__link">
+                  contact us
+                </a>
+              </li>
+            </ul>
+            <button class="menu__button">Download</button>
+          </nav>
+        </div>
+      </div>
+      <div class="header-pink"></div>
+      <div class="header__content">
+        <div class="header__content-info">
+          <h1 class="header__info-title">
+            Take care of yours family’s
+            <a href="#" class="header__info-title--link">health.</a>
+          </h1>
+          <p class="header__info-description">
+            All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns.
+          </p>
+          <button class="button">GET STARTED</button>
+        </div>
+        <img
+          class="header__content-img"
+          src="./images/header.svg"
+          alt="ilustration"
+        >
+      </div>
+      <div class="header__video">
+        <a href="https://www.youtube.com/" class="header__video-figure">
+          <img
+            src="./images/Polygon.svg"
+            alt="play"
+            class="header__video-play"
+          >
+        </a>
+        <div class="header__video-description">
+          <p class="header__video-title">
+            Stay safe with GoCorona
+          </p>
+          <p class="header__video-text">
+            Watch Video
+          </p>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
