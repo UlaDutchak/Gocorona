@@ -4,7 +4,7 @@
   background: #EC5863;
   border-radius: 5px;
   border: transparent;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 10px;
@@ -13,6 +13,7 @@
   color: #FCFDFE;
   cursor: pointer;
   transition: 0.3s;
+  text-transform: uppercase;
 
   &:hover {
     background: #FCFDFE;
