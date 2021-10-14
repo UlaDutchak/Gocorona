@@ -11,4 +11,8 @@
   @include onTablet {
     font-size: 36px;
   }
+
+  @include onMobile {
+    font-size: 32px;
+  }
 }
