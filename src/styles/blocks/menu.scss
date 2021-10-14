@@ -1,0 +1,146 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  @include onMobile {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EC5863;
+    z-index: 3;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+
+    @include onMobile {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    @include onSmallDesktop {
+      margin-right: 22px;
+    }
+
+    @include onTablet {
+      margin-right: 10px;
+    }
+
+    @include onMobile {
+      margin: 0 0 20px;
+
+    }
+
+    &--first {
+      display: none;
+
+      @include onMobile {
+        display: block;
+      }
+    }
+
+    &--last {
+      margin-right: 14vw;
+
+      @include onTablet {
+        margin-right: 11vw;
+      }
+
+      @include onMobile {
+        margin: 0;
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    letter-spacing: 0.14em;
+    padding-bottom: 10px;
+    transition: 0.3s;
+
+    @include onBigDesktop {
+      letter-spacing: 0.08em;
+    }
+
+    @include onSmallDesktop {
+      letter-spacing: 0;
+      font-size: 9px;
+      line-height: 11px;
+    }
+
+    @include onTablet {
+      font-size: 7px;
+    }
+
+    @include onMobile {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.14em;
+      color: #FCFDFE;
+    }
+
+    &:hover {
+      color: #EC5863;
+      border-bottom: 1px solid #EC5863;
+    }
+  }
+
+  &__button {
+    width: 130px;
+    height: 40px;
+    background: #4285F4;
+    border-radius: 5px;
+    border: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.14em;
+    color: #FCFDFE;
+    z-index: 1;
+    position: relative;
+    top: 10%;
+    left: 3%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @include onSmallDesktop {
+      width: 110px;
+      height: 35px;
+    }
+
+    @include onTablet {
+      left: 8%;
+    }
+
+    @include onMobile {
+      left: 0;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: transparent;
+      border: 1px solid #4285F4;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  width: 144px;
+  height: 40px;
+  background: #EC5863;
+  border-radius: 5px;
+  border: transparent;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.14em;
+  color: #FCFDFE;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #FCFDFE;
+    border: 1px solid #EC5863;
+    color: #EC5863;
+  }
+}
