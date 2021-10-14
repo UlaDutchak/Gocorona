@@ -1,0 +1,14 @@
+.title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: #000000;
+  
+  @include onSmallDesktop {
+    font-size: 40px;
+  }
+
+  @include onTablet {
+    font-size: 36px;
+  }
+}

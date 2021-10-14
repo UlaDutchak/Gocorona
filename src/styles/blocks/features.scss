@@ -1,0 +1,132 @@
+.features {
+  display: flex;
+
+  &__square {
+    &-first {
+      width: 12vw;
+      height: 12vw;
+      top: 6%;
+      left: 25%;
+      
+      @include onBigDesktop {
+        top: 5%;
+        left: 20%;
+      }
+
+      @include onTablet {
+        left: 10%;
+        top: 12%;
+      }
+
+      @include onMobile {
+        width: 12vh;
+        height: 12vh;
+        left: 3%;
+      }
+    }
+
+    &-second,
+    &-third {
+      width: 7vw;
+      height: 7vw;
+
+      @include onMobile {
+        width: 7vh;
+        height: 7vh;
+      }
+    }
+
+    &-second {
+      top: 76%;
+      left: 28%;
+
+      @include onBigDesktop {
+        top: 78%;
+        left: 25%;
+      }
+
+      @include onSmallDesktop {
+        top: 80%;
+        left: 20%;
+      }
+
+      @include onTablet {
+        left: 14%;
+      }
+
+      @include onMobile {
+        top: 76%;
+        left: 3%;
+      }
+    }
+
+    &-third {
+      top: 60%;
+      left: 60%;
+
+      @include onBigDesktop {
+        left: 63%;
+      }
+
+      @include onSmallDesktop {
+        left: 66%;
+      }
+
+      @include onTablet {
+        left: 74%;
+      }
+
+      @include onMobile {
+        left: 78%;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+
+    &-img {
+      margin: auto;
+      min-width: 19vw;
+      min-height: 34vw;
+    }
+  }
+
+  &__link {
+    color: #EC5863;
+    text-decoration: none;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+
+    &-title {
+      margin: 0;
+      width: 32vw;
+
+      @include onSmallDesktop {
+        width: 40vw;
+      }
+    }
+    
+    &-text {
+      font-size: 12px;
+      line-height: 138.5%;
+      letter-spacing: 0.08em;
+      color: #616161;
+      width: 32vw;
+      margin: 12px 0 24px;
+
+      @include onSmallDesktop {
+        width: 40vw;
+      }
+    }
+  }
+}
