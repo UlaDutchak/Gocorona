@@ -30,7 +30,9 @@
       transform: rotate(-30deg);
 
       @include onMobile {
-        left: 5%;
+        width: 8vw;
+        height: 8vw;
+        left: 3%;
       }
     }
 
@@ -39,6 +41,12 @@
       height: 7vw;
       transform: rotate(105deg);
       top: -10%;
+
+      @include onMobile {
+        width: 11vw;
+        height: 11vw;
+        top: -5%;
+      }
     }
 
     &-third {
@@ -137,6 +145,7 @@
 
     &-text {
       width: 30vw;
+      margin-bottom: 24px;
 
       @include onMobile {
         width: 90vw;

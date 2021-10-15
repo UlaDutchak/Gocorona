@@ -1,8 +1,14 @@
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
-  width: 100vw;
+  justify-items: center;
+
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__square {
     &-first {
@@ -14,6 +20,7 @@
       @include onMobile {
         width: 12vh;
         height: 12vh;
+        top: 5%;
       }
     }
 
@@ -31,11 +38,19 @@
     &-second {
       top: 76%;
       left: 18%;
+
+      @include onMobile {
+        top: 84%;
+      }
     }
 
     &-third {
       top: 60%;
       left: 65%;
+
+      @include onMobile {
+        left: 70%;
+      }
     }
   }
 
@@ -45,6 +60,13 @@
     height: 45vw;
     margin: auto;
     position: relative;
+    margin: 10vw 0;
+
+    @include onMobile {
+      width: 80vw;
+      height: 95vw;
+      order: 2;
+    }
 
     &-img {
       margin: auto;
@@ -56,6 +78,11 @@
       &:hover {
         transform: scale(1.1);
       }
+
+      @include onMobile {
+        width: 53vw;
+        height: 85vw;
+      }
     }
   }
 
@@ -63,16 +90,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     width: 50vw;
 
     @include onMobile {
       margin-left: 10px;
+      order: 1;
+      width: 90vw;
+      align-items: center;
+      margin-top: 10vw;
     }
 
     &-title {
       margin: 0;
       width: 32vw;
+
+      @include onMobile {
+        width: 90vw;
+        text-align: center;
+      }
     }
     
     &-text {
@@ -81,6 +116,11 @@
 
       @include onSmallDesktop {
         width: 45vw;
+      }
+
+      @include onMobile {
+        width: 80vw;
+        text-align: center;
       }
     }
   }

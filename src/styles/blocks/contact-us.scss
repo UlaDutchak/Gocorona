@@ -63,8 +63,8 @@
     &-third {
       width: 11vw;
       height: 11vw;
-      top: 60%;
-      left: 75%;
+      top: 70%;
+      left: 79%;
       transform: rotate(-30deg);
 
       @include onMobile {
@@ -92,7 +92,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 4vw 0;
+    margin: 6vw 0;
 
     @include onMobile {
       flex-direction: column;
@@ -124,6 +124,11 @@
     border-radius: 8px;
     background-color: #fff;
     z-index: 1;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     @include onMobile {
       width: 45vw;
