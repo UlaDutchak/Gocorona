@@ -60,11 +60,12 @@
     height: 45vw;
     margin: auto;
     position: relative;
-    margin: 10vw 0;
+    margin: 2vw 0;
 
     @include onMobile {
-      width: 80vw;
+      width: 75vw;
       height: 95vw;
+      margin: 15vw 0;
       order: 2;
     }
 
@@ -80,7 +81,7 @@
       }
 
       @include onMobile {
-        width: 53vw;
+        width: 52vw;
         height: 85vw;
       }
     }
@@ -97,7 +98,7 @@
       order: 1;
       width: 90vw;
       align-items: center;
-      margin-top: 10vw;
+      margin-top: 15vw;
     }
 
     &-title {
