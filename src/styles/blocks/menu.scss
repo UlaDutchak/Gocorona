@@ -48,6 +48,7 @@
 
       @include onMobile {
         display: block;
+        margin-bottom: 10vw;
       }
     }
 
@@ -102,6 +103,11 @@
     &:hover {
       color: $color-pink;
       border-bottom: 1px solid $color-pink;
+
+      @include onMobile {
+        color: $color-ivory;
+        border-bottom: 1px solid $color-ivory;
+      }
     }
   }
 
