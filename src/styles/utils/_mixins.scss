@@ -1,29 +1,29 @@
 @mixin onLargeDesktop {
-  @media (min-width: 1400px) {
+  @media (min-width: $large-desktop-size) {
     @content;
   }
 }
 
 @mixin onBigDesktop {
-  @media (max-width: 1200px) {
+  @media (max-width: $big-desktop-size) {
     @content;
   }
 }
 
 @mixin onSmallDesktop {
-  @media (max-width: 1024px) {
+  @media (max-width: $small-desktop-size) {
     @content;
   }
 }
 
 @mixin onTablet {
-  @media (max-width: 768px) {
+  @media (max-width: $tablet-size) {
     @content;
   }
 }
 
 @mixin onMobile {
-  @media (max-width: 590px) {
+  @media (max-width: $mobile-size) {
     @content;
   }
 }

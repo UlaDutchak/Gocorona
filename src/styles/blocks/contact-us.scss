@@ -122,7 +122,7 @@
     height: 25vw;
     box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
     border-radius: 8px;
-    background-color: #fff;
+    background-color: $color-white;
     z-index: 1;
     transition: 0.3s;
 
@@ -152,38 +152,38 @@
     }
 
     &-title {
-      font-weight: bold;
-      font-size: 16px;
+      font-weight: $bold-font-weight;
+      font-size: $average-font-size;
       line-height: 138.5%;
       text-align: center;
       letter-spacing: 0.08em;
       margin: 0;
 
       @include onSmallDesktop {
-        font-size: 14px;
+        font-size: $medium-font-size;
       }
 
       @include onTablet {
-        font-size: 12px;
+        font-size: $normal-font-size;
         letter-spacing: 0;
       }
 
       @include onMobile {
-        font-size: 14px;
+        font-size: $medium-font-size;
       }
     }
 
     &-text {
-      font-size: 12px;
+      font-size: $normal-font-size;
       line-height: 138.5%;
       text-align: center;
       letter-spacing: 0.08em;
-      color: #616161;
+      color: $color-grey;
       margin: 4px 0;
       width: 20vw;
 
       @include onTablet {
-        font-size: 10px;
+        font-size: $smaller-font-size;
         letter-spacing: 0;
       }
 

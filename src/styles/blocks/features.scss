@@ -94,7 +94,7 @@
     width: 50vw;
 
     @include onMobile {
-      margin-left: 10px;
+      margin-left: $smaller-font-size;
       order: 1;
       width: 90vw;
       align-items: center;

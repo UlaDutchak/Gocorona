@@ -1,28 +1,28 @@
 .title {
-  font-weight: 700;
-  font-size: 44px;
+  font-weight: $bold-font-weight;
+  font-size: $largest-font-size;
   line-height: 126%;
-  color: #000000;
+  color: $color-black;
   
   @include onSmallDesktop {
-    font-size: 40px;
+    font-size: $biggest-font-size;
   }
 
   @include onTablet {
-    font-size: 36px;
+    font-size: $huge-font-size;
   }
 
   @include onMobile {
-    font-size: 28px;
+    font-size: $bigger-font-size;
   }
 
   &--link-pink {
-    color: #EC5863;
+    color: $color-pink;
     text-decoration: none;
   }
 
   &--link-blue {
-    color: #4285f4;
+    color: $color-blue;
     text-decoration: none;
   }
 }
