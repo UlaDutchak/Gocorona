@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+
+  @include onMobile {
+    flex-direction: column
+  }
+
+  &__link {
+    margin-bottom: 4vw;
+
+    @include onMobile {
+      margin-bottom: 0;
+    }
+
+    &-img--google {
+      width: 14vw;
+      height: 5vw;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include onMobile {
+        width: 34vw;
+        height: 13vw;
+      }
+    }
+
+    &-img--app {
+      width: 15vw;
+      height: 6vw;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @include onMobile {
+        width: 35vw;
+        height: 14vw;
+      }
+    }
+  }
+}
